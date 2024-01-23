@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+#root {
+  text-align: center;
+}
+
 body {
   background-color: rgba(165, 176, 193, 0.204);
 }
