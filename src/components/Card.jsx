@@ -1,5 +1,5 @@
 import classes from '../modules/Card.module.css';
-import { decrementQuantity, incrementQuantity } from './HelperButtons';
+import { decrementQuantity, incrementQuantity } from './HelperFunctions';
 import { formatCurrency } from '../utilities/CurrencyFormatter';
 import products from '../utilities/FetchProducts';
 import { useState } from 'react';
