@@ -1,9 +1,10 @@
 import classes from '../modules/Card.module.css';
-import { decrementQuantity, incrementQuantity } from './HelperFunctions';
+import { decrementQuantity, incrementQuantity } from './HelperButtons';
 import { formatCurrency } from '../utilities/CurrencyFormatter';
 import products from '../utilities/FetchProducts';
 import { useState } from 'react';
 
+// eslint-disable-next-line react/prop-types
 function Card({id, title, price, imgUrl, quantity}) {
   const [itemQuantity, setItemQuantity] = useState(0);
   quantity = itemQuantity;
