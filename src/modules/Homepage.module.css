@@ -1,0 +1,10 @@
+.homepageContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-size: 3rem;
+  margin: auto;
+}
