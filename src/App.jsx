@@ -1,14 +1,12 @@
-// import './App.css';
-// import Card from './components/Card';
-// import Navbar from './components/Navbar';
+import './App.css';
+import Homepage from './pages/Homepage';
 
-// function App() {
-//   return (
-//     <div>
-//       <Navbar />
-//       <Card /> 
-//     </div>
-//   )
-// }
+function App() {
+  return (
+    <div>
+      <Homepage />
+    </div>
+  )
+}
 
-// export default App;
+export default App;
