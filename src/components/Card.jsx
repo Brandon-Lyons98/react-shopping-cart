@@ -19,7 +19,7 @@ function Card({id, title, price, imgUrl, quantity}) {
               <img src={imgUrl}/>
               <h2>{title}</h2>
             </div>
-            {itemQuantity === 0 ? (
+            {quantity === 0 ? (
               <div>
                 <h3 className={classes.closedPrice}>{formatCurrency(price)}</h3>
                 <button className={classes.addBtn} onClick={() => {setItemQuantity(incrementQuantity(id-1))}}>+ Add To Cart</button>
