@@ -1,11 +1,25 @@
-import classes from '../modules/Card.module.css';
+import classes from '../modules/Cart.module.css';
+import Navbar from "../components/Navbar";
+import products from '../utilities/FetchProducts';
+import { formatCurrency } from '../utilities/CurrencyFormatter';
+import { totalCost } from '../components/HelperFunctions';
 
-function ShoppingCart({name, price, quantity}) {
+function ShoppingCart() {
   return (
-    <div className={classes.cartInfo}>
-      <h1>{name}</h1>
-      <p>{price}</p>
-      <p>{quantity}</p>
+    <div>
+      <Navbar />
+      <div className={classes.cartInfo}>
+        {products.map((item) => (
+          item.quantity > 0 ?
+          <div className={classes.cartCardContainer} key={item.id}>
+            <h1>{item.title}</h1>
+            <div className={classes.total}>
+              <p>{item.quantity} x {formatCurrency(item.price)} = {formatCurrency(item.quantity * item.price)}</p>
+            </div>
+          </div> : null
+        ))}
+        <h1>Total Cost: {formatCurrency(totalCost())}</h1>
+      </div>
     </div>
   )
 }
