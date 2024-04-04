@@ -1,0 +1,14 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+}

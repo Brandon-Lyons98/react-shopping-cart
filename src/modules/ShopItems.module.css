@@ -1,0 +1,26 @@
+.cardStyles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px gray;
+  width: clamp(100px, 25%, 230px);
+  margin: 0.5rem auto;
+  padding: 1rem;
+  background-color: white;
+  max-height: 500px;
+}
+
+img {
+  max-height: 80%;
+  max-width: 80%;
+}
+
+.title {
+  font-size: 0.9rem;
+}
+
+.price {
+  font-size: 1rem;
+}

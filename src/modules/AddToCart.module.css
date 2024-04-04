@@ -1,0 +1,36 @@
+.cartForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+
+.formBtns {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: none;
+  background-color: rgba(22, 87, 184, 0.548);
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+input {
+  margin: 0.5rem;
+  /* padding: 0; */
+  width: 30%;
+  text-align: center;
+  padding-left: 0.75rem;
+}
+
+#submitBtn {
+  width: 50%;
+  margin: 1rem;
+  border-radius: 5%;
+}
