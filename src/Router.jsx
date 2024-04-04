@@ -1,14 +1,16 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import DisplayShop from "./components/Shop";
+import ShoppingCart from "./components/Cart";
 import App from "./App";
-// import Homepage from "./pages/Homepage";
-import DisplayShop from "./pages/Shop";
-import ShoppingCart from "./pages/Cart";
+import ErrorPage from "./components/ErrorPage";
+import { CartProvider } from "./components/CartContext";
 
 const Router = () => {
   const router = createBrowserRouter([
     {
       path: '/',
       element: <App />,
+      errorElement: <ErrorPage />
     },
     {
       path: '/shop',
@@ -20,7 +22,11 @@ const Router = () => {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <CartProvider>
+      <RouterProvider router={router} />
+    </CartProvider>
+  )
 }
 
 export default Router;
